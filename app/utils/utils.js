@@ -7,12 +7,8 @@ export const handleClick = async (e, args) => {
   let setMockTest = args.setMockTest;
   let buttonType = args.buttonType;
 
-  // console.log("mockTest", mockTest);
-
   let numberOfQuestion = mockTest.number_of_question;
   let questions = [];
-
-  // console.log(numberOfQuestion);
 
   for (let i = 0; i < numberOfQuestion; i++) {
     questions.push({
@@ -43,13 +39,8 @@ export const handleClick = async (e, args) => {
   setMockTest({ ...mockTest });
 
   // disale double click;
-
   // check required fields
-
-
   // get All VAlues and create mongodb DATABASE
-
-  //
 
   try {
     // const response = await axios.post('http://localhost:5000/api/team/create-mocktest', mockTest);

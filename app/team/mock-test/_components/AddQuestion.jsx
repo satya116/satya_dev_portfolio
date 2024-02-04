@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import Button from '@/app/_components/Button'
 import QuestionsPagination from './QuestionsPagination'
 import Question from './Question'
-import { handleQuestionNavigation } from '@/app/utils/utils'
+import { handleClick, handleQuestionNavigation } from '@/app/utils/utils'
 
 const AddQuestion = ({ mockTest, setMockTest, step, setStep }) => {
 
@@ -49,12 +49,17 @@ const AddQuestion = ({ mockTest, setMockTest, step, setStep }) => {
                 onNext={() => handleQuestionNavigation({ type: "next", number_of_question: mockTest.number_of_question, currentQuestionIndex: currentQuestionIndex, setCurrentQuestionIndex: setCurrentQuestionIndex })}
                 onPrevious={() => handleQuestionNavigation({ type: "previous", number_of_question: mockTest.number_of_question, currentQuestionIndex: currentQuestionIndex, setCurrentQuestionIndex: setCurrentQuestionIndex })}
             />
-            <Button
+            {/* <Button
                 twButtonMargin="mt-6"
                 twBackgroundColor="bg-green-600"
                 twTextColor="text-white"
                 buttonTitle="Save & Next"
-            />
+            /> */}
+
+            <div className='flex justify-end p-4'>
+                <Button twBackgroundColor="bg-gray-200" twTextColor="text-gray-700" buttonTitle="Cancel" />
+                <Button onClick={(e) => handleClick(e, { step, setStep, mockTest, setMockTest, buttonType: "save_n_next" })} twBackgroundColor="bg-green-600" twTextColor="text-white" buttonTitle="Save & Next" />
+            </div>
         </div>
     )
 }
