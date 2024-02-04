@@ -20,7 +20,7 @@ export const handleClick = async (e, args) => {
       "options": [
         {
           "id": 1,
-          "text": "tgyhyhy"
+          "text": ""
         },
         {
           "id": 2,

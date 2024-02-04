@@ -23,7 +23,7 @@ const page = () => {
                 "options": [
                     {
                         "id": 1,
-                        "text": "tgyhyhy"
+                        "text": ""
                     },
                     {
                         "id": 2,
