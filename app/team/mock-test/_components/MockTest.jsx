@@ -25,7 +25,7 @@ const MockTest = ({ mockTest, setMockTest, step, setStep }) => {
         } else {
             mockTest[nameX] = e[0].value;
             setMockTest({ ...mockTest });
-            console.log("changed", mockTest);
+            // console.log("changed", mockTest);
         }
     };
 

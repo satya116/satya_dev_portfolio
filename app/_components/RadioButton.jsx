@@ -29,7 +29,7 @@ const MultiSelectRadioButton = ({ RadioButtonLabel }) => {
 
     }
     const handleClick =(e) => {
-        console.log(e, e.target.value, e.target.checked, e.target.type);
+        // console.log(e, e.target.value, e.target.checked, e.target.type);
 
         e.target.checked = !e.target.checked;
 

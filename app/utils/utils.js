@@ -42,10 +42,6 @@ export const handleClick = async (e, args) => {
   mockTest.questions = questions;
   setMockTest({ ...mockTest });
 
-
-  console.log("after snn", mockTest);
-
-
   // disale double click;
 
   // check required fields

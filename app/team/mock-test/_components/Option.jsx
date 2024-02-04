@@ -5,7 +5,7 @@ const Option = () => {
 
         <div className='mt-4'>
             <input
-                onChange={() => console.log("lol")}
+                onChange={() => console.log()}
 
                 type="radio"
                 name="DeliveryOption"

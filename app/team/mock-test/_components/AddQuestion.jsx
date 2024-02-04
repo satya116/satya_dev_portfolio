@@ -40,7 +40,7 @@ const AddQuestion = ({ mockTest, setMockTest, step, setStep }) => {
         <div className='mt-12'>
             <Question mockTest={mockTest} setMockTest={setMockTest}
                 editable={true}
-                totalNumberOfQuestion={20}
+                totalNumberOfQuestion={mockTest.number_of_question}
                 currentQuestionIndex={currentQuestionIndex}
             />
             <QuestionsPagination
